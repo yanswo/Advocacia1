@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 :root {
-  --fundo: #FFFF;
+  --fundo: #ffff;
   --texto: #000;
-  --corPrimaria: #FCA311;
-  --corSecundaria: #14213D;
-  --cinza: #E5E5E5;
+  --corPrimaria: #fca311;
+  --corSecundaria: #14213d;
+  --cinza: #636262;
 }
 
 * {
@@ -14,4 +14,115 @@
   border: none;
   box-sizing: border-box;
   font-family: "Inria Serif", serif;
+}
+
+body {
+  background-color: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--corSecundaria);
+  color: var(--fundo);
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+header nav a {
+  color: var(--fundo);
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: var(--corSecundaria);
+  color: var(--fundo);
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 1000px;
+}
+
+#sobre h2,
+#artigos h2,
+#galeria h2,
+#localizacao h2,
+#contato h2 {
+  margin-bottom: 1rem;
+  color: var(--corSecundaria);
+  font-size: 1.8rem;
+}
+
+#sobre p {
+  font-size: 1.2rem;
+  color: var(--cinza);
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: var(--cinza);
+}
+
+#galeria {
+  text-align: center;
+}
+
+#galeria p {
+  font-size: 1.2rem;
+  color: var(--cinza);
+}
+
+#localizacao p {
+  font-size: 1.2rem;
+  color: var(--cinza);
+}
+
+#contato a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: var(--corPrimaria);
+  color: var(--fundo);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#contato a:hover {
+  background-color: #e07b00;
+}
+
+footer {
+  background-color: var(--corSecundaria);
+  color: var(--fundo);
+  padding: 1rem;
+  text-align: center;
 }

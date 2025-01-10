@@ -1,10 +1,10 @@
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import SobreSection from "./components/SobreSection";
-import ArtigosSection from "./components/ArtigosSection";
-import GaleriaSection from "./components/GaleriaSection";
-import LocalizacaoSection from "./components/LocalizacaoSection";
-import ContatoSection from "./components/ContatoSection";
+import Sobre from "./components/Sobre";
+import Artigos from "./components/Artigos";
+import Galeria from "./components/Galeria";
+import Localizacao from "./components/Localizacao";
+import Contato from "./components/Contato";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -12,11 +12,11 @@ const App = () => {
     <div>
       <Header />
       <HeroSection />
-      <SobreSection />
-      <ArtigosSection />
-      <GaleriaSection />
-      <LocalizacaoSection />
-      <ContatoSection />
+      <Sobre />
+      <Artigos />
+      <Galeria />
+      <Localizacao />
+      <Contato />
       <Footer />
     </div>
   );
