@@ -1,11 +1,20 @@
+import fotoPerfil from '../imgs/fotoPerfil.jpg'
+
 const HeroSection = () => {
   return (
     <section className="hero">
-      <h2>Bem-vindo ao Escritório do Advogado</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odit ullam
-        architecto
-      </p>
+      <div className="conteudo">
+        <h1>Seu parceiro no caminho para a justiça.</h1>
+        <p>
+          Estou ao seu lado, fornecendo orientação jurídica especializada e
+          apoio inabalável para proteger seus direitos e garantir que a justiça
+          seja feita.
+        </p>
+        <a href="#">Agende uma consulta</a>
+      </div>
+      <div className="fotoPerfil">
+        <img src={fotoPerfil} alt="" />
+      </div>
     </section>
   );
 };
