@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header>
-      <h1>Advogado Nome</h1>
+      <h1>Cristóvão Brito</h1>
       <nav>
         <a href="#sobre">Sobre</a>
         <a href="#artigos">Artigos</a>
