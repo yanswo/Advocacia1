@@ -5,18 +5,28 @@ const Footer = () => {
         <div className="footer-sobre">
           <h3>Cristovão Brito</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem
+            Sou advogado especializado em direito civil, empresarial e
+            tributário, oferecendo serviços jurídicos de alta qualidade para
+            empresas e indivíduos.
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-            fugit eligendi,
+            Com mais de 10 anos de experiência, busco sempre uma abordagem
+            personalizada para atender às necessidades específicas de cada
+            cliente, com compromisso, ética e eficiência.
           </p>
           <div className="icones">
-            <a href="#">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="#">
+            <a
+              href="https://wa.me/55XXXXXXXXX"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-whatsapp"></i>
             </a>
           </div>
@@ -27,28 +37,28 @@ const Footer = () => {
 
           <p>
             <i className="fas fa-envelope"></i>
-            emailteste@gmail.com
+            contato@advocaciacristovao.com.br
           </p>
           <p>
             <i className="fas fa-map-marker-alt"></i>
-            Rua teste, 432, Teste
+            Avenida São João, 432, Centro, Maceió - AL
           </p>
         </div>
 
         <div className="footer-servicos">
           <h4>Serviços</h4>
           <ul>
-            <li>Consultoria jurídica</li>
-            <li>Elaboração de contratos</li>
+            <li>Consultoria jurídica empresarial</li>
+            <li>Elaboração e análise de contratos</li>
             <li>Defesa em processos judiciais</li>
-            <li>Assessoria em questões tributárias</li>
+            <li>Assessoria tributária e planejamento fiscal</li>
           </ul>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2025 Advocacia Cristovão All rights reserved.</p>
-        <p>Privacy Policy | Terms of Use</p>
+        <p>&copy; 2025 Advocacia Cristovão. Todos os direitos reservados.</p>
+        <p>Política de Privacidade | Termos de Uso</p>
       </div>
     </footer>
   );

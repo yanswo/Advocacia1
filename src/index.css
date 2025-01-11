@@ -6,6 +6,10 @@
   --corPrimaria: #fca311;
   --corSecundaria: #1f1e1e;
   --cinza: #636262;
+  --backgroundModal: rgba(0, 0, 0, 0.6);
+  --borderRadius: 8px;
+  --transicao: 0.3s ease-out;
+  --inputPadding: 0.8rem;
 }
 
 * {
@@ -260,7 +264,7 @@ section {
 }
 
 #sobre p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--cinza);
 }
 
@@ -367,4 +371,138 @@ footer p {
 
 .footer-bottom p {
   color: var(--fundo);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backgroundModal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background-color: var(--fundo);
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  border-radius: var(--borderRadius);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: left;
+  transform: translateY(-50px);
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  color: var(--corSecundaria);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: var(--corPrimaria);
+}
+
+.modal h3 {
+  font-size: 1.8rem;
+  color: var(--corSecundaria);
+  margin-bottom: 1.5rem;
+}
+
+.modal-form-group {
+  margin-bottom: 1.2rem;
+}
+
+.modal-form-group label {
+  font-weight: bold;
+  color: var(--corSecundaria);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.modal-form-group input,
+.modal-form-group textarea {
+  width: 100%;
+  padding: var(--inputPadding);
+  border: 1px solid #ccc;
+  border-radius: var(--borderRadius);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  transition: border 0.3s ease;
+}
+
+.modal-form-group input:focus,
+.modal-form-group textarea:focus {
+  border-color: var(--corPrimaria);
+  outline: none;
+}
+
+.modal-form-group textarea {
+  height: 150px;
+  resize: none;
+}
+
+.modal-radio-group {
+  margin-bottom: 1.5rem;
+}
+
+.modal-radio-group label {
+  font-weight: bold;
+  color: var(--corSecundaria);
+  margin-bottom: 0.5rem;
+}
+
+.modal-radio-group div {
+  margin: 0.5rem 0;
+}
+
+button.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--corPrimaria);
+  color: var(--fundo);
+  border: none;
+  border-radius: var(--borderRadius);
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.submit-btn:hover {
+  background-color: #e07b00;
+  transform: translateY(-2px);
+}
+
+button.submit-btn:focus {
+  outline: none;
 }
