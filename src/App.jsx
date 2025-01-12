@@ -6,6 +6,7 @@ import Galeria from "./components/Galeria";
 import Localizacao from "./components/Localizacao";
 import Contato from "./components/Contato";
 import Footer from "./components/Footer";
+import Cards from "./components/Cards";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Header />
       <HeroSection />
       <Sobre />
+      <Cards />
       <Artigos />
       <Galeria />
       <Localizacao />
