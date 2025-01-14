@@ -1,9 +1,10 @@
-import fotoPerfil from '../imgs/fotoPerfil.jpg'
+import styles from "./HeroSection.module.css";
+import fotoPerfil from "../imgs/fotoPerfil.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="hero">
-      <div className="conteudo">
+    <section className={styles.hero}>
+      <div className={styles.conteudo}>
         <h1>Seu parceiro no caminho para a justiça.</h1>
         <p>
           Estou ao seu lado, fornecendo orientação jurídica especializada e
@@ -12,7 +13,7 @@ const HeroSection = () => {
         </p>
         <a href="#">Agende uma consulta</a>
       </div>
-      <div className="fotoPerfil">
+      <div className={styles.fotoPerfil}>
         <img src={fotoPerfil} alt="" />
       </div>
     </section>

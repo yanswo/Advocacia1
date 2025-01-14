@@ -1,0 +1,22 @@
+.localizacaoContainer {
+  padding: 2rem;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+.localizacaoContainer {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.localizacaoContainer p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.mapContainer iframe {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

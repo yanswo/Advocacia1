@@ -1,8 +1,10 @@
+import styles from "./Footer.module.css";
+
 const Footer = () => {
   return (
     <footer>
-      <div className="footer-container">
-        <div className="footer-sobre">
+      <div className={styles.footerContainer}>
+        <div className={styles.footerSobre}>
           <h3>Cristovão Brito</h3>
           <p>
             Sou advogado especializado em direito civil, empresarial e
@@ -14,7 +16,7 @@ const Footer = () => {
             personalizada para atender às necessidades específicas de cada
             cliente, com compromisso, ética e eficiência.
           </p>
-          <div className="icones">
+          <div className={styles.icones}>
             <a
               href="https://instagram.com"
               target="_blank"
@@ -32,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-contato">
+        <div className={styles.footerContato}>
           <h4>Entre em contato!</h4>
 
           <p>
@@ -45,7 +47,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="footer-servicos">
+        <div className={styles.footerServicos}>
           <h4>Serviços</h4>
           <ul>
             <li>Consultoria jurídica empresarial</li>
@@ -56,7 +58,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-bottom">
+      <div className={styles.footerBottom}>
         <p>&copy; 2025 Advocacia Cristovão. Todos os direitos reservados.</p>
         <p>Política de Privacidade | Termos de Uso</p>
       </div>

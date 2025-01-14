@@ -1,5 +1,6 @@
 import { useState } from "react";
 import download from "../imgs/download.jpeg";
+import styles from "./Sobre.module.css";
 
 const SobreSection = () => {
   const [mostrarMais, setMostrarMais] = useState(false);
@@ -30,16 +31,27 @@ const SobreSection = () => {
     orienta sua prática pedagógica e administrativa.`;
 
   return (
-    <section id="sobre">
-      <h2>Sobre o Mestre Cristóvão Brito</h2>
-      <div className="sobre-container">
-        <img src={download} alt="Cristóvão Brito" className="sobre-imagem" />
-        <p>{mostrarMais ? textoCompleto : textoInicial}</p>
-      </div>
-      <button onClick={() => setMostrarMais(!mostrarMais)}>
-        {mostrarMais ? "Mostrar menos" : "Mostrar mais"}
-      </button>
-    </section>
+    <div className={styles.Sobre}>
+      <section id="sobre">
+        <h2>Sobre o Mestre Cristóvão Brito</h2>
+        <div className={styles.sobreContainer}>
+          <img
+            src={download}
+            alt="Cristóvão Brito"
+            className={styles.sobreImagem}
+          />
+          <p>{mostrarMais ? textoCompleto : textoInicial}</p>
+        </div>
+        <div className={styles.botaoContainer}>
+          <button
+            className={styles.botaoMostrar}
+            onClick={() => setMostrarMais(!mostrarMais)}
+          >
+            {mostrarMais ? "Mostrar menos" : "Mostrar mais"}
+          </button>
+        </div>
+      </section>
+    </div>
   );
 };
 
