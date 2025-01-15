@@ -1,12 +1,11 @@
 .cardsConteiner {
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
-  grid-template-rows: repeat(2, auto);
-  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
-  list-style: none;
-  margin: 0px;
+  max-width: none;
+  padding: 2rem;
+  gap: 50px;
 }
 
 .cardsConteiner .card {
@@ -23,16 +22,6 @@
 .cardsConteiner .card img {
   width: 100%;
   border-radius: 10px;
-}
-
-.cardsConteiner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: none;
-  padding: 2rem;
-  gap: 50px;
 }
 
 .informacoes {
@@ -53,8 +42,9 @@
 }
 
 .conteudoCard h2 {
-  font-size: 1.5rem;
-  color: var(--corPrimaria);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--corSecundaria);
 }
 
 .conteudoCard p {
@@ -66,17 +56,17 @@
   font-size: 1rem;
   text-decoration: none;
   padding: 10px 20px;
-  background-color: var(--corPrimaria);
+  background-color: var(--corSecundaria);
   width: fit-content;
-  color: var(--texto);
+  color: var(--corPrimaria);
   border-radius: 5px;
   margin-top: 30px;
   transition: all 0.2s ease;
 }
 
 .conteudoCard a:hover {
-  background-color: var(--texto);
-  color: var(--fundo);
+  background-color: var(--corPrimaria);
+  color: var(--corSecundaria);
   text-decoration: underline;
 }
 
@@ -93,20 +83,22 @@
   max-width: 300px;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.096);
-  border-top: 4px solid var(--corPrimaria);
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.075);
+  border: 1px solid rgba(0, 0, 0, 0.068);
+  border-radius: 5px;
+  border-top: 4px solid var(--corSecundaria);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.048);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   background-color: white;
 }
 
 .cards li:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.096);
 }
 
 .cards li:hover h3 {
-  color: var(--corPrimaria);
+  color: var(--corSecundaria);
 }
 
 .cards li h3 {

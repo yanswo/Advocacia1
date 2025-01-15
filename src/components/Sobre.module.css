@@ -18,7 +18,7 @@
 }
 
 #sobre h2 {
-  font-family: "Georgia", serif;
+  font-family: var(--font-textos);
   font-size: 2.2rem;
   color: var(--corSecundaria);
   text-align: center;
@@ -50,7 +50,7 @@
 }
 
 #sobre p {
-  font-family: "Verdana", sans-serif;
+  font-family: var(--font-textos);
   font-size: 1.1rem;
   line-height: 1.6;
   color: var(--cinza);
@@ -59,8 +59,8 @@
 }
 
 button {
-  background-color: var(--corPrimaria);
-  color: #000000;
+  background-color: var(--corSecundaria);
+  color: var(--corPrimaria);
   font-size: 1rem;
   padding: 0.8rem 1.5rem;
   border: none;
@@ -74,7 +74,8 @@ button {
 }
 
 button:hover {
-  background-color: var(--corSecundaria);
+  background-color: var(--corPrimaria);
+  color: var(--corSecundaria);
 }
 
 @media (max-width: 768px) {

@@ -1,9 +1,10 @@
 import styles from "./Header.module.css";
+import logo from '../imgs/logo.png';
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <h1>Cristóvão Brito</h1>
+      <img src={logo} alt="" />
       <nav>
         <a href="#sobre">Sobre</a>
         <a href="#artigos">Artigos</a>
