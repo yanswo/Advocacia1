@@ -5,16 +5,16 @@ const Footer = () => {
     <footer>
       <div className={styles.footerContainer}>
         <div className={styles.footerSobre}>
-          <h3>Cristovão Brito</h3>
+          <h3>Cristóvão Brito</h3>
           <p>
-            Sou advogado especializado em direito civil, empresarial e
-            tributário, oferecendo serviços jurídicos de alta qualidade para
-            empresas e indivíduos.
+            Sou advogado especialista em Direito Penal e Processual Penal,
+            oferecendo serviços jurídicos de alta qualidade com foco na defesa e
+            orientação de meus clientes.
           </p>
           <p>
-            Com mais de 10 anos de experiência, busco sempre uma abordagem
-            personalizada para atender às necessidades específicas de cada
-            cliente, com compromisso, ética e eficiência.
+            Com vasta experiência e envolvimento em diversas instituições
+            jurídicas, mantenho um compromisso com a ética e a eficiência,
+            buscando sempre a melhor solução para cada caso.
           </p>
           <div className={styles.icones}>
             <a
@@ -36,7 +36,6 @@ const Footer = () => {
 
         <div className={styles.footerContato}>
           <h4>Entre em contato!</h4>
-
           <p>
             <i className="fas fa-envelope"></i>
             contato@advocaciacristovao.com.br
@@ -50,16 +49,18 @@ const Footer = () => {
         <div className={styles.footerServicos}>
           <h4>Serviços</h4>
           <ul>
-            <li>Consultoria jurídica empresarial</li>
-            <li>Elaboração e análise de contratos</li>
-            <li>Defesa em processos judiciais</li>
-            <li>Assessoria tributária e planejamento fiscal</li>
+            <li>Consultoria jurídica penal</li>
+            <li>Defesa em processos penais</li>
+            <li>Assessoria em Direito Constitucional e Processual</li>
+            <li>Orientação e aconselhamento jurídico</li>
           </ul>
         </div>
       </div>
 
       <div className={styles.footerBottom}>
-        <p>&copy; 2025 Advocacia Cristovão. Todos os direitos reservados.</p>
+        <p>
+          &copy; 2025 Advocacia Cristóvão Brito. Todos os direitos reservados.
+        </p>
         <p>Política de Privacidade | Termos de Uso</p>
       </div>
     </footer>

@@ -11,7 +11,7 @@ const HeroSection = () => {
           apoio inabalável para proteger seus direitos e garantir que a justiça
           seja feita.
         </p>
-        <a href="#">Agende uma consulta</a>
+        <a href="#contato">Agende uma consulta</a>
       </div>
       <div className={styles.fotoPerfil}>
         <img src={fotoPerfil} alt="" />

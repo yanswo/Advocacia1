@@ -5,17 +5,20 @@ const SobreSection = () => {
   const [mostrarMais, setMostrarMais] = useState(false);
 
   const textoInicial = `
-    Cristóvão Brito é um mestre em Direito, formado pela Universidade Federal de Alagoas (UFAL),
-    e professor da Faculdade FASVIPA. Sua abordagem inovadora no ensino jurídico conecta a teoria
-    com a prática do sistema jurídico brasileiro.
+    Cristóvão Brito é mestre em Direito pela Universidade Federal de Alagoas (UFAL),
+    e professor da Faculdade FASVIPA. Possui graduação em Direito pelo Centro de Ensino Superior
+    Arcanjo Mikael de Arapiraca e é especialista em Direito Penal e Processual Penal pela Universidade
+    Estácio de Sá. 
   `;
 
   const textoCompleto = `
-    ${textoInicial} Como coordenador da Faculdade São Bento, Cristóvão Brito modernizou o curso de Direito,
-    promovendo a integração entre a instituição e o mercado jurídico. Ele incentiva a pesquisa e a extensão
-    com projetos voltados para a inclusão social. Especialista em Direito Constitucional e Processual, Cristóvão
-    é um defensor da constante atualização dos profissionais do Direito. Seu estilo de liderança colaborativa
-    promove debates construtivos, refletindo sua crença no poder transformador do conhecimento.
+    ${textoInicial} Foi coordenador do curso de Direito da Faculdade São Vicente de Pão de Açúcar (FASVIPA)
+    no período de 2023-2024 e ex-presidente da ACRIMAL - Associação da Advocacia Criminal de Alagoas,
+    Subseção Sertão. Ex-membro do Tribunal de Ética e Disciplina da OAB Alagoas, delegado da ESA - Escola
+    Superior de Advocacia - Subseção Santana do Ipanema/AL (triênio 2022-2024) e vice-presidente da OAB
+    Alagoas - Subseção Santana do Ipanema. Professor visitante da UNIMA - Centro Universitário de Maceió
+    em 2022 e 2024, procurador do Instituto de Previdência de São José da Tapera desde 2019, e professor
+    de Direito Penal e Processual Penal. Cristóvão também atua como advogado.
   `;
 
   return (
