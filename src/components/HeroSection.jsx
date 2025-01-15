@@ -1,5 +1,5 @@
 import styles from "./HeroSection.module.css";
-import fotoPerfil from "../imgs/fotoPerfil.jpg";
+import fotoPerfil from "../imgs/fotoPerfil.jpeg";
 
 const HeroSection = () => {
   return (

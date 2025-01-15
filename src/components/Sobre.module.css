@@ -1,11 +1,12 @@
-#sobre {
-  padding: 3rem;
+.sobre {
+  padding: 2rem 3rem;
   background-color: var(--fundo);
   margin: 2rem auto;
-  max-width: 1100px;
+  max-width: 900px;
   border-radius: var(--borderRadius);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   animation: fadeIn 1s ease-in-out;
+  text-align: center;
 }
 
 @keyframes fadeIn {
@@ -17,48 +18,24 @@
   }
 }
 
-#sobre h2 {
-  font-family: var(--font-textos);
-  font-size: 2.2rem;
+.titulo {
+  font-family: var(--font-titulos);
+  font-size: 2.5rem;
   color: var(--corSecundaria);
-  text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   letter-spacing: 1px;
 }
 
-.sobreContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.sobreImagem {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid var(--corPrimaria);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.sobreImagem:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-#sobre p {
+.texto {
   font-family: var(--font-textos);
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.8;
   color: var(--cinza);
-  text-align: justify;
-  max-width: 800px;
+  margin-bottom: 1.5rem;
+  transition: opacity 0.3s ease;
 }
 
-button {
+.botaoMostrar {
   background-color: var(--corSecundaria);
   color: var(--corPrimaria);
   font-size: 1rem;
@@ -66,38 +43,31 @@ button {
   border: none;
   border-radius: var(--borderRadius);
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
   margin-top: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-button:hover {
-  background-color: var(--corPrimaria);
-  color: var(--corSecundaria);
+.botaoMostrar:hover {
+  background-color: var(--corSecundaria);
+  color: var(--corPrimaria);
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
-  #sobre h2 {
-    font-size: 1.8rem;
+  .sobre {
+    padding: 2rem 1.5rem;
   }
 
-  .sobreContainer {
-    flex-direction: column;
-    text-align: center;
+  .titulo {
+    font-size: 2rem;
   }
 
-  .sobreImagem {
-    margin-bottom: 1rem;
-  }
-
-  #sobre p {
+  .texto {
     font-size: 1rem;
-    max-width: 90%;
   }
 
-  button {
+  .botaoMostrar {
     width: 100%;
     padding: 0.8rem;
   }

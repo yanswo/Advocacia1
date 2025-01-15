@@ -1,15 +1,18 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 import styles from "./Contato.module.css";
+
+emailjs.init("plq6NWc52FMx7mYUF");
 
 const Contato = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({
-    nome: "",
+    to_name: "Advogado Cristóvão Brito",
+    from_name: "",
     email: "",
     numero: "",
-    causa: "",
-    comentario: "",
     assunto: "",
+    comentario: "",
     mensagemAdicional: "",
     contato: "whatsapp",
   });
@@ -31,12 +34,11 @@ const Contato = () => {
     e.preventDefault();
 
     if (formData.contato === "whatsapp") {
-      if (!formData.numero) {
-        alert("Por favor, forneça seu número para contatar via WhatsApp.");
-        return;
-      }
-
-      const whatsappUrl = `https://wa.me/123456789?text=Nome:%20${formData.nome}%0A%0ANúmero:%20${formData.numero}%0ACausa:%20${formData.causa}%0AComentário:%20${formData.comentario}`;
+      const whatsappUrl = `https://wa.me/5582993663318?text=Nome:%20${encodeURIComponent(
+        formData.from_name
+      )}%0AAssunto:%20${encodeURIComponent(
+        formData.assunto
+      )}%0AComentário:%20${encodeURIComponent(formData.comentario)}`;
       window.open(whatsappUrl, "_blank");
     } else if (formData.contato === "email") {
       if (!formData.email) {
@@ -44,8 +46,27 @@ const Contato = () => {
         return;
       }
 
-      const mailtoLink = `mailto:contato@advocaciacristovao.com.br?subject=${formData.assunto}&body=Nome:%20${formData.nome}%0AEmail:%20${formData.email}%0ACausa:%20${formData.causa}%0AComentário:%20${formData.comentario}%0AMensagem%20Adicional:%20${formData.mensagemAdicional}`;
-      window.location.href = mailtoLink;
+      const templateParams = {
+        to_name: formData.to_name,
+        from_name: formData.from_name,
+        email_id: formData.email,
+        message: `Assunto: ${formData.assunto}\nComentário: ${formData.comentario}\nMensagem Adicional: ${formData.mensagemAdicional}`,
+      };
+
+      emailjs.send("service_41swtdz", "template_6bttjka", templateParams).then(
+        (response) => {
+          console.log(
+            "Email enviado com sucesso!",
+            response.status,
+            response.text
+          );
+          alert("Email enviado com sucesso!");
+        },
+        (error) => {
+          console.error("Erro ao enviar email:", error);
+          alert("Erro ao enviar email. Tente novamente.");
+        }
+      );
     }
 
     setIsModalOpen(false);
@@ -60,7 +81,7 @@ const Contato = () => {
       <section id="contato">
         <h2>Contato</h2>
         <p>Entre em contato para mais informações sobre nossos serviços.</p>
-        <br></br>
+        <br />
         <button onClick={handleOpenModal}>Entre em contato</button>
 
         {isModalOpen && (
@@ -94,12 +115,12 @@ const Contato = () => {
                 className={`${styles.formTransition} ${formData.contato}`}
               >
                 <div className={styles.modalFormGroup}>
-                  <label htmlFor="nome">Nome:</label>
+                  <label htmlFor="from_name">Nome:</label>
                   <input
                     type="text"
-                    id="nome"
-                    name="nome"
-                    value={formData.nome}
+                    id="from_name"
+                    name="from_name"
+                    value={formData.from_name}
                     onChange={handleInputChange}
                     required
                   />
@@ -119,12 +140,12 @@ const Contato = () => {
                       />
                     </div>
                     <div className={styles.modalFormGroup}>
-                      <label htmlFor="causa">Causa:</label>
+                      <label htmlFor="assunto">Assunto:</label>
                       <input
                         type="text"
-                        id="causa"
-                        name="causa"
-                        value={formData.causa}
+                        id="assunto"
+                        name="assunto"
+                        value={formData.assunto}
                         onChange={handleInputChange}
                         required
                       />
