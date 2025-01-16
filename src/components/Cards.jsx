@@ -1,4 +1,4 @@
-import imagemCards from "../imgs/imagemCards.png";
+import imagemCards from "../imgs/fotoCards.jpeg";
 import { ImHammer2 } from "react-icons/im";
 import { FaHandshake } from "react-icons/fa";
 import { IoPerson } from "react-icons/io5";

@@ -6,10 +6,22 @@ import imgEscrit04 from "../imgs/escritorio04.jpg";
 import imgEscrit05 from "../imgs/escritorio06.jpg";
 import imgEscrit06 from "../imgs/escritorio04.jpg";
 import styles from "./Galeria.module.css";
+import Modal from "./util/Modal";
 
 const GaleriaSection = () => {
   const [inView, setInView] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const galeriaRef = useRef(null);
+
+  const images = [
+    imgEscrit01,
+    imgEscrit02,
+    imgEscrit03,
+    imgEscrit04,
+    imgEscrit05,
+    imgEscrit06,
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,6 +44,15 @@ const GaleriaSection = () => {
     };
   }, []);
 
+  const openModal = (index) => {
+    setSelectedImageIndex(index);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <section id="galeria" ref={galeriaRef}>
       <h2>Fotos do Escritório</h2>
@@ -40,25 +61,24 @@ const GaleriaSection = () => {
           inView ? styles.aparecer : styles.sair
         }`}
       >
-        <li className={styles.galeriaCard}>
-          <img src={imgEscrit01} alt="imagem escritorio" />
-        </li>
-        <li className={styles.galeriaCard}>
-          <img src={imgEscrit03} alt="imagem escritorio" />
-        </li>
-        <li className={styles.galeriaCard}>
-          <img src={imgEscrit02} alt="imagem escritorio" />
-        </li>
-        <li className={styles.galeriaCard}>
-          <img src={imgEscrit04} alt="imagem escritorio" />
-        </li>
-        <li className={styles.galeriaCard}>
-          <img src={imgEscrit05} alt="imagem escritorio" />
-        </li>
-        <li className={styles.galeriaCard}>
-          <img src={imgEscrit06} alt="imagem escritorio" />
-        </li>
+        {images.map((image, index) => (
+          <li
+            key={index}
+            className={styles.galeriaCard}
+            onClick={() => openModal(index)}
+          >
+            <img src={image} alt={`Imagem ${index}`} />
+          </li>
+        ))}
       </ul>
+
+      {isOpen && (
+        <Modal
+          images={images}
+          selectedImageIndex={selectedImageIndex}
+          onClose={closeModal}
+        />
+      )}
     </section>
   );
 };

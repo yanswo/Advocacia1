@@ -82,20 +82,22 @@ const Contato = () => {
         <h2>Contato</h2>
         <p>Entre em contato para mais informações sobre nossos serviços.</p>
         <br />
-        <button onClick={handleOpenModal}>Entre em contato</button>
+        <button className="botao" onClick={handleOpenModal}>
+          Entre em contato
+        </button>
 
         {isModalOpen && (
           <div className={`${styles.modalOverlay} fadeIn`}>
             <div className={styles.modalContent}>
               <span className={styles.modalClose} onClick={handleCloseModal}>
-                &times;
+                Fechar
               </span>
               <h3>Escolha o meio de contato</h3>
               <div className={styles.contactSelection}>
                 <button
                   onClick={() => handleSelectContact("whatsapp")}
                   className={`${styles.contactOption} ${
-                    formData.contato === "whatsapp" ? styles.selected : ""
+                    formData.contato === "whatsapp" ? styles.selectedWhats : ""
                   }`}
                 >
                   WhatsApp
@@ -103,7 +105,7 @@ const Contato = () => {
                 <button
                   onClick={() => handleSelectContact("email")}
                   className={`${styles.contactOption} ${
-                    formData.contato === "email" ? styles.selected : ""
+                    formData.contato === "email" ? styles.selectedEmail : ""
                   }`}
                 >
                   Email

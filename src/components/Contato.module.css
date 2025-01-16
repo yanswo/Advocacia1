@@ -1,5 +1,6 @@
 .contatoContainer {
   text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .contatoContainer a {
@@ -43,19 +44,19 @@
   animation: fadeInModal 0.5s forwards;
 }
 
-.modalCloseBtn {
+.modalClose {
   position: absolute;
   top: 10px;
   right: 15px;
   background-color: transparent;
   border: none;
   font-size: 20px;
-  color: #aaa;
+  color: #3d3b3b;
   cursor: pointer;
 }
 
-.modalCloseBtn:hover {
-  color: #000;
+.modalClose:hover {
+  color: #ff0000;
 }
 
 .modalTitle {
@@ -85,13 +86,13 @@
   text-align: center;
 }
 
-.contactOption.selected {
-  background-color: #397dc5;
-  color: white;
+.contactOption.selectedWhats {
+  background-color: #0ec736;
+  color: rgb(0, 0, 0);
 }
 
-.contactOption:not(.selected):hover {
-  background-color: #e0e0e0;
+.contactOption.selectedEmail {
+  background-color: #ff0000;
 }
 
 .modalForm {
@@ -144,6 +145,22 @@
 .submitBtn:hover {
   background-color: #0056b3;
   transform: scale(1.05);
+}
+
+button {
+  background-color: var(--corSecundaria);
+  color: var(--corPrimaria);
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao {
+  background-color: #0ec736;
 }
 
 @keyframes fadeInModal {

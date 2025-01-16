@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import styles from "./Localizacao.module.css";
 
 const LocalizacaoSection = () => {
@@ -5,7 +6,9 @@ const LocalizacaoSection = () => {
     <div className={styles.localizacaoContainer}>
       <section id="localizacao">
         <h2>Localização</h2>
-        <p>Endereço: Rua Exemplo, 123, Cidade - Estado</p>
+        <p>
+          Endereço: Olho d'Agua das flores, Proximo ao Fórum. Estado - Alagoas
+        </p>
 
         <div className={styles.mapContainer}>
           <iframe
