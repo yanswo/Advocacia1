@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import styles from './Sobre.module.css';
-import foto from '../imgs/fotoPerfil.jpeg';
-import ESAicon from '../imgs/ESAicone.png';
-import FASVIPAicon from '../imgs/FASVIPAicone.png';
-import OABicon from '../imgs/OABicone.png';
-import UFALicon from '../imgs/UFALicone.png';
+import { useState } from "react";
+import styles from "./Sobre.module.css";
+import foto from "../imgs/logoSite.png";
+import ESAicon from "../imgs/ESAicone.png";
+import FASVIPAicon from "../imgs/FASVIPAicone.png";
+import OABicon from "../imgs/OABicone.png";
+import UFALicon from "../imgs/UFALicone.png";
 
 const SobreSection = () => {
   const [mostrarMais, setMostrarMais] = useState(false);
@@ -30,10 +30,12 @@ const SobreSection = () => {
     <section id="sobre" className={styles.sobreConteier}>
       <h2 className={styles.tituloSobre}>Sobre o Mestre Cristóvão Brito</h2>
       <div className={styles.conteudoSobre}>
-        <img src={foto} className={styles.fotoSobre} alt="Foto do advogado" />
+        <img src={foto} className={styles.fotoSobre} alt="Foto da Logo" />
         <div className={styles.textoSobre}>
           <p>{mostrarMais ? textoCompleto : textoInicial}</p>
-          <button onClick={() => setMostrarMais(!mostrarMais)}>Mostrar mais</button>
+          <button onClick={() => setMostrarMais(!mostrarMais)}>
+            Mostrar mais
+          </button>
           <ul className={styles.icones}>
             <img src={UFALicon} alt="icone UFAL" />
             <img src={OABicon} alt="icone OAB" />

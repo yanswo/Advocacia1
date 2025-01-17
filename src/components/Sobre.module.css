@@ -56,9 +56,17 @@
 .textoSobre button {
   width: fit-content;
   font-weight: 400;
-  
 }
 
 .conteudoSobre img {
   max-width: 350px;
+}
+
+.fotoSobre {
+  background-color: var(--corSecundaria);
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  margin-bottom: 150px;
+  margin-right: 40px;
 }

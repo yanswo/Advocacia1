@@ -10,10 +10,10 @@ const Modal = ({ images, selectedImageIndex, onClose }) => {
           images={images}
           selectedImageIndex={selectedImageIndex}
         />
-        <button className={styles.closeButton} onClick={onClose}>
-          Fechar
-        </button>
       </div>
+      <button className={styles.closeButton} onClick={onClose}>
+        Fechar
+      </button>
     </div>
   );
 };
