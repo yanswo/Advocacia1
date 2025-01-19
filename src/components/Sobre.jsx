@@ -5,6 +5,7 @@ import ESAicon from "../imgs/ESAicone.png";
 import FASVIPAicon from "../imgs/FASVIPAicone.png";
 import OABicon from "../imgs/OABicone.png";
 import UFALicon from "../imgs/UFALicone.png";
+import faculicon from "../imgs/logoSaoBento.png";
 
 const SobreSection = () => {
   const [mostrarMais, setMostrarMais] = useState(false);
@@ -41,6 +42,7 @@ const SobreSection = () => {
             <img src={OABicon} alt="icone OAB" />
             <img src={ESAicon} alt="icone ESA" />
             <img src={FASVIPAicon} alt="icone FASVIPA" />
+            <img src={faculicon} alt="icone FASVIPA" />
           </ul>
         </div>
       </div>

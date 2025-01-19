@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -38,11 +39,11 @@ const Footer = () => {
           <h4>Entre em contato!</h4>
           <p>
             <i className="fas fa-envelope"></i>
-            contato@advocaciacristovao.com.br
+            cristovaoadv21@gmail.com
           </p>
           <p>
             <i className="fas fa-map-marker-alt"></i>
-            Avenida São João, 432, Centro, Maceió - AL
+            Endereço: Olho d'Agua das Flores, Próximo ao Fórum. Estado -
           </p>
         </div>
 

@@ -18,7 +18,7 @@ const Cards = () => {
             personalizada. Trabalho com ética e compromisso para garantir
             soluções eficientes.
           </p>
-          <a href="#">Veja mais</a>
+          <a href="#artigos">Veja mais</a>
         </div>
       </div>
       <ul className={styles.cards}>
