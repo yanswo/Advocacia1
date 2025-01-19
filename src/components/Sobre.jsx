@@ -34,7 +34,7 @@ const SobreSection = () => {
         <div className={styles.textoSobre}>
           <p>{mostrarMais ? textoCompleto : textoInicial}</p>
           <button onClick={() => setMostrarMais(!mostrarMais)}>
-            Mostrar mais
+            {mostrarMais ? "Mostrar menos" : "Mostrar mais"}
           </button>
           <ul className={styles.icones}>
             <img src={UFALicon} alt="icone UFAL" />

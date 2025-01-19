@@ -27,6 +27,7 @@
 
 .icones {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 }
@@ -56,6 +57,14 @@
 .textoSobre button {
   width: fit-content;
   font-weight: 400;
+  font-family: var(--font-titulos);
+  transition: all .2s ease;
+}
+
+.textoSobre button:hover {
+  background-color: var(--corPrimaria);
+  text-decoration: underline;
+  color: var(--corSecundaria);
 }
 
 .conteudoSobre img {
@@ -69,4 +78,29 @@
   height: 280px;
   margin-bottom: 150px;
   margin-right: 40px;
+}
+
+@media (max-width: 1100px) {
+  .conteudoSobre {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .conteudoSobre img {
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+
+  .conteudoSobre .textoSobre {
+    align-items: center;
+  }
+
+  .conteudoSobre .textoSobre p {
+    text-align: center;
+    font-size: .9rem;
+  }
+
+  .icones {
+    justify-content: center;
+  }
 }

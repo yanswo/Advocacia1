@@ -46,3 +46,37 @@ header nav a:hover {
   color: var(--corPrimaria);
   text-decoration: none;
 }
+
+.mobileBar {
+  display: none;
+}
+
+@media(max-width: 1100px) {
+  header {
+    top: auto;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    width: 97%;
+    height: fit-content;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.151);
+  }
+
+  header img {
+    display: none;
+  }
+
+  .navegacao {
+    display: none;
+  }
+  
+  .mobileBar {
+    display: flex;
+  }
+
+  .mobileBar svg {
+    font-size: 1.4rem;
+  }
+}

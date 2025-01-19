@@ -76,6 +76,12 @@ const Contato = () => {
     setFormData({ ...formData, contato: canal });
   };
 
+  const fecharModal = (target, currentTarget) => {
+    if(target == currentTarget) {
+      setIsModalOpen(false)
+    }
+  }
+
   return (
     <div className={styles.contatoContainer}>
       <section id="contato">
@@ -87,7 +93,7 @@ const Contato = () => {
         </button>
 
         {isModalOpen && (
-          <div className={`${styles.modalOverlay} fadeIn`}>
+          <div className={`${styles.modalOverlay} fadeIn`} onClick={({target, currentTarget}) => fecharModal(target, currentTarget)}>
             <div className={styles.modalContent}>
               <span className={styles.modalClose} onClick={handleCloseModal}>
                 Fechar

@@ -20,7 +20,9 @@
   padding: 0;
   border: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
 
 body {
   margin-top: 80px;
@@ -28,6 +30,12 @@ body {
   color: var(--texto);
   line-height: 1.6;
   font-family: var(--font-textos);
+}
+
+@media(max-width: 1100px) {
+  body {
+    margin-top: 0px;
+  }
 }
 
 button {

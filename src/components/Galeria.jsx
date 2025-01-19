@@ -54,7 +54,7 @@ const GaleriaSection = () => {
   };
 
   return (
-    <section id="galeria" ref={galeriaRef}>
+    <section id="galeria" ref={galeriaRef} className={styles.galeria}>
       <h2>Fotos do Escritório</h2>
       <ul
         className={`${styles.galeriaConteiner} ${

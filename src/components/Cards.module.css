@@ -33,6 +33,7 @@
 .informacoes img {
   max-width: 500px;
   border-radius: 5px;
+  width: 100%;
 }
 
 .conteudoCard {
@@ -138,4 +139,34 @@
   top: 7px;
   left: -20px;
   border-radius: 50%;
+}
+
+@media (max-width: 1100px) {
+  .informacoes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conteudoCard {
+    align-items: center;
+    text-align: center;
+  }
+
+  .conteudoCard h2 {
+    font-size: 1.6rem;
+  }
+
+  .conteudoCard p {
+    font-size: 1.1rem;
+  }
+
+  .cards {
+    overflow-x: scroll;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .cards li {
+    width: 300px;
+  }
 }

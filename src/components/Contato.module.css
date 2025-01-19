@@ -1,6 +1,12 @@
 .contatoContainer {
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.contatoContainer h2 {
+  font-size: 2rem;
+  color: var(--corSecundaria);
+  font-family: var(--font-titulos);
+  font-weight: 700;
 }
 
 .contatoContainer a {

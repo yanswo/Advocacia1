@@ -17,13 +17,12 @@
   }
 }
 
-#artigos h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.5rem;
-  color: var(--corSecundaria);
-  margin-bottom: 2rem;
+.artigosSection h2 {
+  font-size: 2rem !important;
+  font-family: var(--font-titulos);
+  font-weight: 700;
   text-align: center;
-  letter-spacing: 1px;
+  margin-bottom: 30px !important;
 }
 
 .artigosContainer {
