@@ -4,45 +4,23 @@ const artigos = [
   {
     titulo: "Ciências criminais e constituição",
     descricao: "Estudos em homenagem ao professor José Fernando Lima Souza",
-    data: "2023, ESMAL",
+    data: "Outubro de 2023",
     link: "https://esmal.tjal.jus.br/_pdf/1-Livro-ciencias-criminais-e-constituicao_.pdf", // link do PDF
   },
   {
-    titulo: "A Evolução do Direito Digital no Brasil",
+    titulo: "REGIME PRÓPRIO DE PREVIDÊNCIA SOCIAL",
     descricao:
-      "Artigo publicado no Jornal Y, discutindo as mudanças legais e as implicações da tecnologia no direito.",
-    data: "Dezembro de 2023",
-    link: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", // exemplo de link PDF
+      "O artigo trata da relevância das parcerias no Regime Próprio de Previdência Social para assegurar os direitos dos segurados, respeitando o equilíbrio financeiro e atuarial. Explora as mudanças trazidas pela Emenda Constitucional nº 103/2019 e destaca o uso de convênios e contratos administrativos como ferramentas para aprimorar a gestão previdenciária e promover os direitos fundamentais.",
+    data: "Fevereiro de 2024",
+    link: "https://rbds.ieprev.com.br/rbds/article/view/288/242", // exemplo de link PDF
   },
   {
-    titulo: "A Evolução do Direito Digital no Brasil",
+    titulo: "Direito Penal e Sociedade",
     descricao:
-      "Artigo publicado no Jornal Y, discutindo as mudanças legais e as implicações da tecnologia no direito.",
-    data: "Dezembro de 2023",
+      "O livro Direito Penal e Sociedade reúne artigos acadêmicos que discutem a relação entre o direito penal e questões sociais, como encarceramento massivo, violência de gênero, racismo, feminicídio e justiça restaurativa, oferecendo análises críticas sobre o sistema de justiça criminal no Brasil e alternativas ao modelo punitivista atual.",
+    data: "Dezembro de 2021",
     link: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", // exemplo de link PDF
   },
-  {
-    titulo: "A Evolução do Direito Digital no Brasil",
-    descricao:
-      "Artigo publicado no Jornal Y, discutindo as mudanças legais e as implicações da tecnologia no direito.",
-    data: "Dezembro de 2023",
-    link: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", // exemplo de link PDF
-  },
-  {
-    titulo: "A Evolução do Direito Digital no Brasil",
-    descricao:
-      "Artigo publicado no Jornal Y, discutindo as mudanças legais e as implicações da tecnologia no direito.",
-    data: "Dezembro de 2023",
-    link: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", // exemplo de link PDF
-  },
-  {
-    titulo: "A Evolução do Direito Digital no Brasil",
-    descricao:
-      "Artigo publicado no Jornal Y, discutindo as mudanças legais e as implicações da tecnologia no direito.",
-    data: "Dezembro de 2023",
-    link: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", // exemplo de link PDF
-  },
-  // outros artigos
 ];
 
 const ArtigosSection = () => {
