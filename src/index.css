@@ -23,7 +23,6 @@
   scroll-behavior: smooth;
 }
 
-
 body {
   margin-top: 80px;
   background-color: var(--fundo);
@@ -32,22 +31,10 @@ body {
   font-family: var(--font-textos);
 }
 
-@media(max-width: 1100px) {
+@media (max-width: 1100px) {
   body {
     margin-top: 0px;
   }
-}
-
-button {
-  background-color: var(--corSecundaria);
-  color: var(--corPrimaria);
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 section {

@@ -77,10 +77,10 @@ const Contato = () => {
   };
 
   const fecharModal = (target, currentTarget) => {
-    if(target == currentTarget) {
-      setIsModalOpen(false)
+    if (target == currentTarget) {
+      setIsModalOpen(false);
     }
-  }
+  };
 
   return (
     <div className={styles.contatoContainer}>
@@ -88,12 +88,19 @@ const Contato = () => {
         <h2>Contato</h2>
         <p>Entre em contato para mais informações sobre nossos serviços.</p>
         <br />
-        <button className="botao" onClick={handleOpenModal}>
-          Entre em contato
-        </button>
+        <div>
+          <button className={styles.botaoContato} onClick={handleOpenModal}>
+            Entre em contato
+          </button>
+        </div>
 
         {isModalOpen && (
-          <div className={`${styles.modalOverlay} fadeIn`} onClick={({target, currentTarget}) => fecharModal(target, currentTarget)}>
+          <div
+            className={`${styles.modalOverlay} fadeIn`}
+            onClick={({ target, currentTarget }) =>
+              fecharModal(target, currentTarget)
+            }
+          >
             <div className={styles.modalContent}>
               <span className={styles.modalClose} onClick={handleCloseModal}>
                 Fechar
