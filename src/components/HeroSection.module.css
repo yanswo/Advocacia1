@@ -103,19 +103,34 @@
   }
 
   .hero .conteudo {
+    align-items: center;
     gap: 25px;
   }
 
   .hero .conteudo h1 {
     font-size: 2.5rem;
-    max-width: 500px;
+    text-align: center;
+
   }
 
   .hero .conteudo p {
     max-width: 400px;
+    text-align: center;
   }
+  
 
   .hero .conteudo a {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero .conteudo h1 {
+    font-size: 2rem;
+    max-width: 300px;
+  }
+
+  .hero .conteudo p {
+    max-width: 300px;
   }
 }
