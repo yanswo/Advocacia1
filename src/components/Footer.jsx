@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
 
         <div className={styles.footerContato}>
-          <h4>Entre em contato!</h4>
+          <h3>Entre em contato!</h3>
           <p>
             <i className="fas fa-envelope"></i>
             cristovaoadv21@gmail.com
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
 
         <div className={styles.footerServicos}>
-          <h4>Serviços</h4>
+          <h3>Serviços</h3>
           <ul>
             <li>Consultoria jurídica penal</li>
             <li>Defesa em processos penais</li>

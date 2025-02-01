@@ -16,6 +16,7 @@ const NoticiaModal = ({ setActiveModal, noticia }) => {
     >
       <div className={style.modalContent}>
         <div className={style.content}>
+          <button className={style.buttonClose} onClick={() => setActiveModal(false)}>Fechar</button>
           <div className={style.bannerNoticia}>
             <div style={{ backgroundImage: `url(${noticia.img})` }}></div>
             <h1>{noticia.titulo}</h1>
