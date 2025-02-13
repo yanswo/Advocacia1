@@ -7,7 +7,7 @@ import Localizacao from './components/Localizacao';
 import Contato from './components/Contato';
 import Footer from './components/Footer';
 import Cards from './components/Cards';
-import NoticiasConteiner from './components/noticias/NoticiasConteiner'
+
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
       <Sobre />
       <Cards />
       <Artigos />
-      <NoticiasConteiner />
+      
       <Galeria />
       <Localizacao />
       <Contato />
